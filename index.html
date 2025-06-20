@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>محاكاة الحرب - إيران vs إسرائيل</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🔥 محاكاة الحرب - إيران ضد إسرائيل 🔥</h1>
+
+    <div id="step1">
+      <h2>اختر دولتك:</h2>
+      <button onclick="selectFaction('إيران')">إيران</button>
+      <button onclick="selectFaction('إسرائيل')">إسرائيل</button>
+    </div>
+
+    <div id="step2" style="display: none;">
+      <h2>اختر السيناريو:</h2>
+      <button onclick="selectScenario('هجوم صاروخي محدود')">هجوم صاروخي محدود</button>
+      <button onclick="selectScenario('هجوم سيبراني')">هجوم سيبراني</button>
+      <button onclick="selectScenario('وساطة دبلوماسية')">وساطة دبلوماسية</button>
+    </div>
+
+    <div id="result" style="display: none;">
+      <h2>📊 النتيجة:</h2>
+      <p id="summaryText"></p>
+      <div class="bar-container">
+        <label>مؤشر التصعيد:</label>
+        <div class="bar">
+          <div id="escalationLevel" class="level green"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
